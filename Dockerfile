@@ -1,12 +1,14 @@
 FROM golang:1.16.3-alpine
 
-RUN apk update && apk add git
 
 ENV GO111MODULE on
 
 WORKDIR /go/src/app
 
-RUN go get github.com/uudashr/gopkgs/v2/cmd/gopkgs \
+RUN apk update \
+  && apk add git \
+  && go mod init \
+  && go get -u github.com/uudashr/gopkgs/v2/cmd/gopkgs \
   github.com/ramya-rao-a/go-outline \
   github.com/acroca/go-symbols \
   github.com/fatih/gomodifytags \
