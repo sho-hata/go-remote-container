@@ -1,17 +1,16 @@
 {
-	"name": "Go-study",
+  "name": "Go-study",
 
-	"dockerComposeFile": [
-		"../docker-compose.yml",
-		"docker-compose.yml"
-	],
+  "dockerComposeFile": [
+    "../docker-compose.yml",
+  ],
 
-	"service": "app",
+  "service": "app",
 
-	"workspaceFolder": "/go/src/app",
+  "workspaceFolder": "/go/src/app",
 
-	"settings": {
-		"terminal.integrated.shell.linux": "/bin/ash",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/ash",
     "go.toolsManagement.checkForUpdates": "off",
     "go.gopath": "/go",
     "go.gocodeAutoBuild": true,
@@ -21,9 +20,9 @@
     "[go]": {
       "editor.formatOnSave": true
     }
-	},
+  },
 
-	"extensions": [
+  "extensions": [
     "golang.go"
   ],
 }
